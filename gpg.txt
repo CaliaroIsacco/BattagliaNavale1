@@ -1,0 +1,25 @@
+gpg: /c/Users/aless/.gnupg/trustdb.gpg: trustdb created
+gpg: key 9AE14DAD34B1288F marked as ultimately trusted
+gpg: directory '/c/Users/aless/.gnupg/openpgp-revocs.d' created
+gpg: revocation certificate stored as '/c/Users/aless/.gnupg/openpgp-revocs.d/11FF07E892CD3CE27F1E88AD9AE14DAD34B1288F.rev'
+public and secret key created and signed.
+
+pub   rsa3072 2022-08-31 [SC] [expires: 2024-08-30]
+      11FF07E892CD3CE27F1E88AD9AE14DAD34B1288F
+uid                      Isacco <caliaro.isacco@studenti.salesianisesto.it>
+sub   rsa3072 2022-08-31 [E] [expires: 2024-08-30]
+
+
+PER CREARE LA key
+git bash
+gpg --gen-key
+
+IMPOSTARE LA KEY
+git config --global user.signingkey 11FF07E892CD3CE27F1E88AD9AE14DAD34B1288F
+
+POI OCCORRE DEFINIRE DOVE è GPG
+where gpg
+
+SELEZIONARE QUELLO DI GIT
+git config --global gpg.program "C:\Program Files\Git\bin\gpg.exe"
+
